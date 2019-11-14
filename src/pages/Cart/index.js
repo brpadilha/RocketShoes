@@ -12,10 +12,12 @@ export default function Cart() {
       <ProductTable>
         <thead>
           <tr>
+            {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
             <th />
             <th>Produto</th>
             <th>QTD</th>
             <th>SUBTOTAL</th>
+            {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
             <th />
           </tr>
         </thead>
