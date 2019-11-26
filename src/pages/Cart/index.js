@@ -48,9 +48,11 @@ function Cart({ cart }) {
                 <strong>R$258,80</strong>
               </td>
               <td>
-                <button type="button">
-                  <MdDelete size={20} color="#7159c1" />
-                </button>
+                <div>
+                  <button type="button">
+                    <MdDelete size={20} color="#7159c1" />
+                  </button>
+                </div>
               </td>
             </tr>
           ))}
