@@ -21,9 +21,9 @@ Top libraries used: Axios, history, json-server, react, react-router-dom,react-t
 ---
 
 </center>
-Run **yarn to install all the packages
+Run `yarn` to install all the packages
 
-You will need to install json-server to load the api .
+You will need to install `json-server` to load the api .
 
     npm install --global json-server
 
