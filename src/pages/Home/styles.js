@@ -2,24 +2,28 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const ProductList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  list-style: none;
+  display: grid; /* Para que os itens fiquem em uma grid*/
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* para que os itens criem 3 colunas com espaçamento igual*/
+  grid-gap: 20px; /* distanciar os itens de forma ordenada em 20px */
+  list-style: none; /* tirar as bolinhas dos <lis></lis> */
 
   li {
     display: flex;
-    flex-direction: column;
-    background: #fff;
-    border-radius: 4px;
-    padding: 20px;
+    flex-direction: column; /* para ficar sempre uma informação alinhada embaixo da outra*/
+    background: #fff; /* todo o conteúdo atrás fica em branco */
+    border-radius: 4px; /* cria uma pequena angulação nos cantos dos itens */
+    padding: 20px; /* dá um padding de 20px em todos os lados */
 
     img {
-      align-self: center;
-      max-width: 250px;
+      align-self: center; /* Para que as imagens se centralizem*/
+      max-width: 250px; /* Que tenham um tamanho máximo padrão de 250px */
     }
 
     > strong {
+      /* usou o > para que pegue todos os strongs somente dentro do li */
       font-size: 16px;
       line-height: 20px;
       color: #333;
@@ -37,8 +41,8 @@ export const ProductList = styled.ul`
       color: #fff;
       border: 0;
       border-radius: 4px;
-      overflow: hidden;
-      margin-top: auto;
+      overflow: hidden; /* */
+      margin-top: auto; /* Se o texto tiver muitas linhas, para que alinhe sempre os botões */
 
       display: flex;
       align-items: center;
@@ -52,7 +56,12 @@ export const ProductList = styled.ul`
         display: flex;
         align-items: center;
         padding: 12px;
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(
+          0,
+          0,
+          0,
+          0.1
+        ); /* faz com que escureça, de preto, mas com 10% só de preto */
         svg {
           margin-right: 5px;
         }
